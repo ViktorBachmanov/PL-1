@@ -1,8 +1,25 @@
-$bg: #dadbdf;
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+
+$bg: #3b3d47;
+
+
 
 body {
     background-color: $bg;
 }
+
+
 
 .dashboard {
     display: flex;
@@ -14,17 +31,64 @@ body {
 }
 
 .sidebar {
-    background-color: dimgray;
+    background-color: #111827;
+    display: flex;
+    flex-direction: column;
+    font-family: Inter;
   }
   
 .sidebar_size {
-    height: 200px;
+    height: 600px;
     width: 280px;
 }
-  
+
+.menu {
+    margin: 24px 16px;
+}
+
+.menu-button {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #D1D5DB;
+    padding: 13px 14px;
+}
+
+
+.menu-button__text {
+    color:#D1D5DB;
+    margin-left: 10px;
+}
+
+.sidebar-footer {
+    border-top: #1F2937 1px solid;
+    padding: 24px 16px;
+    margin-top: auto;
+}
+
+.sidebar-footer__text-1 {
+    font-size: 16px;
+    line-height: 175%;
+    color: #F3F4F6;
+    display: block;
+}
+
+.sidebar-footer__text-2 {
+    font-size: 14px;
+    line-height: 157%;
+    color: #9CA3AF;
+    display: block;
+}
+
 @media (max-width: 599px) { 
     .sidebar_size {
         width: 76px;
+    }
+
+    .menu-button__text_visibility {
+        display: none;
+    }
+
+    .sidebar-footer_visibility {
+        display: none;
     }
 }
 
