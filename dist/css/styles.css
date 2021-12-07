@@ -1,5 +1,20 @@
 body {
   background-color: #dadbdf; }
 
-h1 {
-  color: black; }
+.dashboard {
+  display: flex; }
+
+.content {
+  background-color: rebeccapurple;
+  flex: 1 1 auto; }
+
+.sidebar {
+  background-color: dimgray; }
+
+.sidebar_size {
+  height: 200px;
+  width: 280px; }
+
+@media (max-width: 599px) {
+  .sidebar_size {
+    width: 76px; } }
