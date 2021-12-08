@@ -24,6 +24,7 @@ body {
     background-color: #111827;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
   }
   
 .sidebar_size {
@@ -58,7 +59,7 @@ body {
 .sidebar-footer {
     border-top: #1F2937 1px solid;
     padding: 24px 16px;
-    margin-top: auto;
+    //margin-top: auto;
 }
 
 .sidebar-footer_visibility {
@@ -81,6 +82,9 @@ body {
     display: block;
 }
 
+.container {
+    padding: 24px;
+}
 
 .app-bar {
     display: flex;
@@ -110,6 +114,7 @@ body {
     height: 84px;
     display: flex;
     align-items: flex-end;
+    justify-content: space-between;
 }
 
 .page-header__title {
@@ -119,10 +124,32 @@ body {
     color: #111827;
 }
 
+.page-header__actions {
+    display: flex;
+}
+
 .page-header__icon-button {
     display: flex;
     width: 101px;
     height: 40px;
     align-items: center;
     justify-content: center;
+}
+
+.page-header__icon-button-text {
+    margin-left: 11px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: #5048E5;
+}
+
+.page-header__button {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding: 8px 20px;
+    background: #5048E5;
+    border-radius: 8px;
 }
