@@ -43,20 +43,20 @@ table {
   border-spacing: 0; }
 
 body {
-  background-color: #3b3d47; }
+  background: black; }
 
 .dashboard {
-  display: flex; }
+  display: flex;
+  font-family: Inter; }
 
 .main {
-  background-color: rebeccapurple;
+  background-color: #F9FAFC;
   flex: 1 1 auto; }
 
 .sidebar {
   background-color: #111827;
   display: flex;
-  flex-direction: column;
-  font-family: Inter; }
+  flex-direction: column; }
 
 .sidebar_size {
   height: 600px;
@@ -66,7 +66,7 @@ body {
       width: 76px; } }
 
 .menu {
-  margin: 24px 16px; }
+  padding: 24px 16px; }
 
 .menu-button {
   background-color: rgba(255, 255, 255, 0.08);
@@ -120,5 +120,23 @@ body {
   width: 40px;
   height: 40px;
   display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.page-header {
+  height: 84px;
+  display: flex;
+  align-items: flex-end; }
+
+.page-header__title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 137.5%;
+  color: #111827; }
+
+.page-header__icon-button {
+  display: flex;
+  width: 101px;
+  height: 40px;
   align-items: center;
   justify-content: center; }

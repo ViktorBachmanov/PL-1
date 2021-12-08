@@ -2,26 +2,21 @@
 @import '_variables';
 
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-
-
-
-
-$bg: #3b3d47;
-
+//@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
 
 
 body {
-    background-color: $bg;
+    background: black;
 }
-
 
 
 .dashboard {
     display: flex;
+    font-family: Inter;
 }
 
 .main {
-    background-color: rebeccapurple;
+    background-color: #F9FAFC;
     flex: 1 1 auto;
 }
 
@@ -29,7 +24,6 @@ body {
     background-color: #111827;
     display: flex;
     flex-direction: column;
-    font-family: Inter;
   }
   
 .sidebar_size {
@@ -41,7 +35,7 @@ body {
 }
 
 .menu {
-    margin: 24px 16px;
+    padding: 24px 16px;
 }
 
 .menu-button {
@@ -49,7 +43,6 @@ body {
     color: #D1D5DB;
     padding: 13px 14px;
 }
-
 
 .menu-button__text {
     color:#D1D5DB;
@@ -109,6 +102,27 @@ body {
     width: 40px;
     height: 40px;
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-header {
+    height: 84px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.page-header__title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 137.5%;
+    color: #111827;
+}
+
+.page-header__icon-button {
+    display: flex;
+    width: 101px;
+    height: 40px;
     align-items: center;
     justify-content: center;
 }
