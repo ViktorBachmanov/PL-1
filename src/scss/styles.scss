@@ -43,9 +43,11 @@ body {
 .menu-button {
     background-color: $sidebar-bg;
     color: #D1D5DB;
-    padding: 13px 14px;
+    padding: 0 14px;
     border-radius: 8px;
     display: flex;
+    align-items: center;
+    height: 40px;
 }
 
 .menu .menu-button {
