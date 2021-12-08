@@ -11,7 +11,7 @@
     <div class='dashboard'>
         <nav class='sidebar sidebar_size'>
             <ul class='menu'>
-                <li class='menu-button'>
+                <li class='menu-button menu-button_active'>
                     <img class='menu-button__icon' src='src/icons/dashboard.svg' alt='D'>
 
                     <span class='menu-button__text menu-button__text_visibility'>Dashboard</span>
@@ -22,11 +22,51 @@
 
                     <span class='menu-button__text menu-button__text_visibility'>Customers</span>
                 </li>
+
+                <li class='menu-button'>
+                    <img class='menu-button__icon' src='src/icons/products.svg' alt='P'>
+
+                    <span class='menu-button__text menu-button__text_visibility'>Products</span>
+                </li>
+
+                <li class='menu-button'>
+                    <img class='menu-button__icon' src='src/icons/account.svg' alt='A'>
+
+                    <span class='menu-button__text menu-button__text_visibility'>Account</span>
+                </li>
+
+                <li class='menu-button'>
+                    <img class='menu-button__icon' src='src/icons/settings.svg' alt='S'>
+
+                    <span class='menu-button__text menu-button__text_visibility'>Settings</span>
+                </li>
+
+                <li class='menu-button'>
+                    <img class='menu-button__icon' src='src/icons/login.svg' alt='L'>
+
+                    <span class='menu-button__text menu-button__text_visibility'>Login</span>
+                </li>
+
+                <li class='menu-button'>
+                    <img class='menu-button__icon' src='src/icons/register.svg' alt='R'>
+
+                    <span class='menu-button__text menu-button__text_visibility'>Register</span>
+                </li>
+
+                <li class='menu-button'>
+                    <img class='menu-button__icon' src='src/icons/error.svg' alt='E'>
+
+                    <span class='menu-button__text menu-button__text_visibility'>Error</span>
+                </li>
             </ul>
 
             <div class='sidebar-footer sidebar-footer_visibility'>
                 <span class='sidebar-footer__text-1'>Need more features?</span>
                 <span class='sidebar-footer__text-2'>Check out our Pro solution.</span>
+                <div class='sidebar-footer__button'>
+                    <span class='sidebar-footer__button-text'>Buy Pro</span>
+                    <img src='src/icons/buy-pro.svg' alt='B'>
+                </div>
             </div>
         </nav>
 
@@ -75,7 +115,10 @@
                         <thead>
                             <th>NAME</th>
                             <th>EMAIL</th>
-                            <th>LOCATION</th>
+                            <th>
+                                <img class='sort-icon' src='src/icons/arrow-down.svg' alt="v">
+                                LOCATION
+                            </th>
                             <th>PHONE</th>
                             <th>REGISTRATION DATE</th>
                         </thead>
