@@ -28,8 +28,9 @@ body {
   }
   
 .sidebar_size {
-    height: 600px;
+    //height: 600px;
     width: 280px;
+    flex: 0 0 auto;
     @media (max-width: $break-point) {
         width: 76px;
     }
@@ -84,6 +85,7 @@ body {
 
 .container {
     padding: 24px;
+    color: #111827;
 }
 
 .app-bar {
@@ -121,7 +123,6 @@ body {
     font-size: 32px;
     font-weight: 700;
     line-height: 137.5%;
-    color: #111827;
 }
 
 .page-header__actions {
@@ -154,10 +155,14 @@ body {
     border-radius: 8px;
 }
 
-.container__search-card {
+.card {
+    background: #FFF;
+    border-radius: $card-radius;
+}
+
+.container__search {
     margin-top: 32px;
     padding: 32px 24px;
-    background: #FFF;
 }
 
 .input-with-label {
@@ -180,4 +185,122 @@ body {
 
 .input-with-label img {
     margin-left: 15px;
+}
+
+.container__table {
+    margin-top: 32px;
+    border-radius: $card-radius;
+}
+
+.container__table-title {
+    padding: 32px 24px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 137.5%;
+    color: #111827;
+    background: white;
+    border-radius: $card-radius;
+}
+
+.main-table {
+    width: 100%;
+    text-align: left;
+    background: white;
+}
+
+.main-table thead {
+    background: #F3F4F6;
+}
+
+.main-table th {
+    vertical-align: middle;
+    padding: 10px 16px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 250%;
+}
+
+.main-table td {
+    padding: 16px;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 157%;
+    border-bottom: #E6E8F0 1px solid;
+}
+
+.main-table img {
+    vertical-align: middle;
+}
+
+.main-table__name-cell {
+    //vertical-align: middle;
+    font-size: 16px;
+    line-height: 150%;
+    margin-left: 16px;
+}
+
+.container__table-footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 56px;
+    border-radius: $card-radius;
+}
+
+.frame {
+    display: flex;
+    align-items: center;
+}
+
+.frame__label {
+    font-size: 12px;
+    line-height: 166%;
+    color: #6B7280;
+}
+
+.pagination-select input {
+    //outline: unset;
+    border: none;
+    font-size: 12px;
+    margin-left: 8px;
+    width: 14px;
+}
+
+.container__table-footer-range {
+    font-size: 12px;
+    line-height: 166%;
+    margin-left: 33px;
+    margin-right: 26px;
+}
+
+.navigation img {
+    width: 40px;
+    height: 40px;
+    padding: 14px;
+    box-sizing: border-box;
+}
+
+
+.page-footer {
+    border-top: #E6E8F0 1px solid;
+    padding-top: 9px;
+    margin: 0 24px;
+}
+
+.container .page-footer {
+    margin-top: 32px;
+
+}
+
+.page-footer__text-1 {
+    font-size: 14px;
+    line-height: 157%;
+    
+}
+
+.page-footer__text-2 {
+    font-size: 14px;
+    line-height: 157%;
+    color: #6B7280;
+    margin-top: 8px;
 }
